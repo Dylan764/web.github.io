@@ -504,46 +504,41 @@ HTML5 + CSS3 </p>
 
 
 
-    <!-- SECCION CONTACTO -->
-    <section id="contacto" class="contacto">
-        <div class="contenido-seccion">
-            <h2>CONTACTO</h2>
-            <div class="fila">
-                <!-- Formulario -->
-                <div class="col">
-                    <input type="text" placeholder="Tú Nombre">
-                    <input type="text" placeholder="Número telefónico">
-                    <input type="text" placeholder="Dirección de correo">
-                    <input type="text" placeholder="Tema">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button>
-                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
-                        <span class="overlay"></span>
-                    </button>
-                </div>
-                <!-- Mapa -->
-                <div class="col">
-                    <img src="img/ubicacion.png" alt="">
-                    <div class="info">
-                        <ul>
-                            <li>
-                                <i class="fa-solid fa-location-dot"></i>
-                                Ate,Lima-Peru
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-mobile-screen"></i>
-                                Llamanos: +51 970149687
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-envelope"></i>
-                                Email: dpagan317@gmail.com
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+ <!-- SECCION CONTACTO -->
+<section id="contacto" class="contacto">
+  <div class="contenido-seccion">
+    <h2>CONTACTO</h2>
+    <div class="fila">
+      <!-- Formulario -->
+      <div class="col">
+        <form onsubmit="enviarCorreo(); return false;">
+          <input type="text" id="nombre" placeholder="Tu Nombre" required>
+          <input type="text" id="telefono" placeholder="Número telefónico">
+          <input type="email" id="correo" placeholder="Dirección de correo" required>
+          <input type="text" id="tema" placeholder="Tema">
+          <textarea id="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+          <button type="submit">
+            Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+            <span class="overlay"></span>
+          </button>
+        </form>
+      </div>
+
+      <!-- Mapa o datos -->
+      <div class="col">
+        <img src="img/ubicacion.png" alt="">
+        <div class="info">
+          <ul>
+            <li><i class="fa-solid fa-location-dot"></i> Ate, Lima - Perú</li>
+            <li><i class="fa-solid fa-mobile-screen"></i> Llamanos: +51 970149687</li>
+            <li><i class="fa-solid fa-envelope"></i> Email: dpagan317@gmail.com</li>
+          </ul>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <!-- footer -->
     <footer>
@@ -562,6 +557,26 @@ HTML5 + CSS3 </p>
     <script src="script.js"></script>
   
   
+<script>
+  function enviarCorreo() {
+    const nombre = document.getElementById("nombre").value;
+    const telefono = document.getElementById("telefono").value;
+    const correo = document.getElementById("correo").value;
+    const tema = document.getElementById("tema").value;
+    const mensaje = document.getElementById("mensaje").value;
+
+    const cuerpo = `
+Nombre: ${nombre}%0D%0A
+Teléfono: ${telefono}%0D%0A
+Correo: ${correo}%0D%0A
+Tema: ${tema}%0D%0A
+Mensaje: ${mensaje}
+`;
+
+    window.location.href = `mailto:dpagan317@gmail.com?subject=Formulario Web: ${tema}&body=${cuerpo}`;
+  }
+</script>
+
 
 
 
