@@ -492,6 +492,17 @@ html{
   justify-content: center;
   gap: 20px;
 }
+@media (max-width: 768px) {
+  .portfolio .galeria {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio .galeria .proyecto {
+    width: 90%;
+    max-width: none;
+  }
+}
 
 /* Cada proyecto */
 .portfolio .galeria .proyecto {
