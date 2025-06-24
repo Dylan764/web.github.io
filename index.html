@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Nick</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.png" alt="">
+            </div>
+            <h1>CESAR PAGAN</h1>
+            <h2>Desarrollador de Software - Experto UI/UX</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-solid fa-rss"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Cesar Pagan.</span> Con 18 años de edad, me especializo en desarrollo frontend y me distingo por un enfoque meticuloso en la calidad y precisión de mi trabajo. Poseo una marcada capacidad para abordar desafíos con proactividad y adaptarme rápidamente a entornos dinámicos. He fortalecido mis competencias en colaboración efectiva dentro de equipos multidisciplinarios y estoy preparado para asumir responsabilidades de manera inmediata.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            30-05-2006
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +51 970149687
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            dpagan317@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.example.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Ate,Lima-Peru
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>DEVELOPER</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>MAC OS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Wordpress</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>IA</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>68%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>69%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Desarrollo de Software</h4>
+                        <span class="casa">Senati</span>
+                        <span class="fecha">2022 - 2025</span>
+                        <p>Desde febrero del 2022 he cursando la carrera de Desarrollo de Software en el instituto Senati. Durante este tiempo, he adquirido conocimientos en lenguajes de programación como PHP, Java y tecnologías relacionadas con bases de datos como MySQL. Además, he desarrollado habilidades prácticas aplicando estos conocimientos en diversos proyectos académicos, fortaleciendo mis capacidades tanto en el desarrollo backend como en el análisis y diseño de sistemas.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Secundaria</h4>
+                        <span class="casa">"VRHT" INEI 46</span>
+                        <span class="fecha">2017 - 2022</span>
+                        <p>Culminé satisfactoriamente mis estudios de educación básica, etapa en la que descubrí un profundo interés por el mundo de la tecnología y la informática. A medida que exploraba conceptos relacionados con computadoras, software y redes, comprendí que deseaba dedicarme profesionalmente a una carrera que me permitiera no solo comprender cómo funcionan los sistemas informáticos, sino también contribuir a su desarrollo y mejora constante. Esta motivación marcó el inicio de mi camino en el ámbito de las tecnologías de la información.
+
+</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Primaria</h4>
+                        <span class="casa">Domingo Faustino Sarmiento</span>
+                        <span class="fecha">2010 - 2016</span>
+                        <p>Culminado</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Desarrollador Web </h4>
+                        <span class="casa">COMPIPRO - Artículos y Productos Publicitarios</span>
+                        <span class="fecha">2024 - 2025</span>
+                        <p>Desarrollo de interfaces web dinámicas y responsivas utilizando HTML5, CSS3 y JavaScript.
+
+<p>Integración de funcionalidades interactivas con JavaScript y AJAX.</p>
+
+<p>Manipulación e intercambio de datos estructurados con JSON.</p>
+
+<p>Conexión e integración de APIs externas (RESTful o SOAP).</p>
+
+<p>Gestión de bases de datos relacionales con MySQL y phpMyAdmin, incluyendo la creación de tablas, mantenimiento de registros y copias de seguridad.</p></p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Desarrollador IA </h4>
+                        <span class="casa">Conauti Sac (Control y Automatización Inmobiliaria)</span>
+                        <span class="fecha">2025 - 2025</span>
+                        <p>
+                            Desarrollo de proyectos relacionados con inteligencia artificial, aplicando técnicas de machine learning y deep learning.
+
+<p></p>Implementación de modelos de IA utilizando Python y bibliotecas especializadas como TensorFlow, Keras, PyTorch, Scikit-learn y Pandas.
+
+<p></p>Uso de Google Colab como entorno de desarrollo en la nube.
+
+<p></p>Consumo y creación de APIs RESTful, permitiendo la conexión entre modelos de IA y sistemas externos mediante JSON y solicitudes HTTP.
+
+<p></p>Despliegue de modelos de IA en producción a través de entornos como Flask, FastAPI o servidores en la nube.
+
+
+
+
+
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Soporte Técnico </h4>
+                        <span class="casa">Komputer Sac</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>
+                            Mantenimiento preventivo y correctivo de hardware
+
+                         <p></p>Reparación de componentes físicos en computadoras y laptops.
+
+                         <p></p>Soporte técnico integral para PC y equipos portátiles.
+
+                         <p></p>Instalación y configuración de sistemas operativos y software.
+
+                         <p></p>Diagnóstico y solución de fallas técnicas.
+
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+<!-- SECCION PORTFOLIO -->
+<section id="portfolio" class="portfolio">
+  <div class="contenido-seccion">
+    <h2>PORTAFOLIO</h2>
+    <div class="galeria">
+
+    <div class="proyecto">
+  <img src="img/p1.jpg" alt="">
+  <div class="overlay">
+    <h3>Web institucional
+    </h3>
+    <p>HTML 
+→ 
+CSS 
+→ 
+JavaScript
+
+</p>
+
+    <button class="btn-toggle-opciones">
+  Elegir acción ▾
+</button>
+
+
+    <div id="opciones-1" class="oculto opciones-extra">
+       <a href="https://github.com/Dylan764/GlobalCountries.git" target="_blank" class="btn-opcion">💻 Código</a>
+         <a href="https://nuevo-mundo.fly.dev/" target="_blank" class="btn-opcion">🌐 Web</a>
+    </div>
+  </div>
+</div>
+
+
+
+      <div class="proyecto">
+    <img src="img/p2.jpg" alt="">
+  <div class="overlay">
+    <h3>GifExpertApp</h3>
+    <p>React.js + useState → 
+
+Custom Hooks→ 
+
+GIPHY API + fetch → 
+localStorage 
+</p>
+
+    <button class="btn-toggle-opciones">
+  Elegir acción ▾
+</button>
+
+
+    <div id="opciones-1" class="oculto opciones-extra">
+       <a href="https://github.com/Dylan764/GIFapp.git" target="_blank" class="btn-opcion">💻 Código</a>
+         <a href="https://gifexpertapp-4a887.web.app/" target="_blank" class="btn-opcion">🌐 Web</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="proyecto">
+          <img src="img/p3.jpg" alt="">
+          <div class="overlay">
+            <h3>Facturación</h3>
+            <p>Java (POO)→ 
+
+JFrame (Swing) → 
+
+Java SE → 
+
+ArrayList / Clases </p>
+
+            <button class="btn-toggle-opciones">
+  Elegir acción ▾
+</button>
+          <div id="opciones-1" class="oculto opciones-extra">
+       <a href="https://github.com/Dylan764/Facturac-Java.git" target="_blank" class="btn-opcion">💻 Código</a>
+         <a href="https://drive.google.com/file/d/1mLwiDi7VeWuTGo7sDGCzu7ms20PR1bJa/view?usp=sharing" target="_blank" class="btn-opcion">🌐 Web</a>
+    </div>
+      </div></div>
+
+      <div class="proyecto">
+        <a href="https://tupagina.com/proyecto4" target="_blank">
+          <img src="img/p4.jpg" alt="">
+          <div class="overlay">
+            <h3>Diseño Creativo</h3>
+            <p>Fotografía</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="proyecto">
+        <a href="https://tupagina.com/proyecto5" target="_blank">
+          <img src="img/p5.jpg" alt="">
+          <div class="overlay">
+            <h3>Diseño Creativo</h3>
+            <p>Fotografía</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="proyecto">
+          <img src="img/p6.jpg" alt="">
+          <div class="overlay">
+            <h3>Proyecto: My pokedex</h3>
+    <p>Vue.js + Vuex 
+→ 
+API→ 
+
+CSS → 
+
+JavaScript  
+→ 
+HTML5 + CSS3 </p>
+      <button class="btn-toggle-opciones">
+  Elegir acción ▾
+</button>
+
+
+    <div id="opciones-1" class="oculto opciones-extra">
+       <a href="https://github.com/Dylan764/MyPokedex.git" target="_blank" class="btn-opcion">💻 Código</a>
+         <a href="https://mi-pokedex-4ce4d.web.app/" target="_blank" class="btn-opcion">🌐 Web</a>
+    </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Ate,Lima-Peru
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: +51 970149687
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: dpagan317@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+  
+  
+
+
+
+</body>
+</html>
